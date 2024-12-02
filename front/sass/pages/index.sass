@@ -1,0 +1,39 @@
+body
+  overscroll-behavior: none
+  img
+    max-width: 100%
+    height: auto
+.wrapper
+  width: 100%
+  -webkit-tap-highlight-color: transparent
+  overscroll-behavior: none
+  height: 100%
+  display: flex
+.banner
+  position: relative
+  width: 50%
+  background: url("../img/bg-desc-en.jpg") no-repeat 0% 0%/cover
+  @media screen and (max-width: 1536px)
+    background: url('../img/bg-tab-en.jpg') no-repeat 0% 0%/cover
+  @media screen and (max-width: 1280px) and (min-height: 1240px)
+    background: url('../img/bg-1300-en.jpg') no-repeat 0% 0%/cover
+  @media screen and (max-width: 1025px) and (max-height: 1230px)
+    background: url('../img/bg-tab-large-en.jpg') no-repeat 0% 0%/cover
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  height: calc(var(--vh, 1vh) * 100)
+  overflow: hidden
+  &__pers
+    position: absolute
+    bottom: -207px
+    width: 70vh
+    right: 34px
+  &__text
+    position: absolute
+    bottom: -2px
+    right: 0
+    width: 100%
+
+
